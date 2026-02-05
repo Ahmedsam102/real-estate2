@@ -1,20 +1,33 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# Egyptian Real Estate Reel Scripter 🎬
 
-# Run and deploy your AI Studio app
+تطبيق ويب يعتمد على الذكاء الاصطناعي (Gemini AI) لكتابة سكريبتات ريلز عقارية احترافية للسوق المصري.
 
-This contains everything you need to run your app locally.
+## 🚀 كيفية الرفع على GitHub (GitHub Pages)
 
-View your app in AI Studio: https://ai.studio/apps/drive/1xt65n6Cz5Q2p9o_gZJ6FUVMD6WExRdTF
+لجعل الموقع يعمل أونلاين مجاناً:
 
-## Run Locally
+1.  أنشئ Repository جديد على GitHub.
+2.  ارفع ملفات المشروع عليه.
+3.  اذهب إلى إعدادات الـ Repository -> **Pages**.
+4.  في خانة **Source** اختر `main` branch.
+5.  انتظر قليلاً وسيظهر لك رابط الموقع.
 
-**Prerequisites:**  Node.js
+**ملاحظة هامة للمطورين (Developers):**
+إذا كنت تستخدم Angular CLI وتريد عمل Build:
+```bash
+ng build --base-href "https://username.github.io/repo-name/"
+npx angular-cli-ghpages --dir=dist/your-project-name
+```
 
+## 📱 كيفية التثبيت على الموبايل (PWA)
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+الموقع مصمم ليعمل كتطبيق:
+1.  افتح الموقع على متصفح Chrome أو Safari من الموبايل.
+2.  اضغط على زر المشاركة (Share) أو القائمة.
+3.  اختر **"Add to Home Screen"** (إضافة للشاشة الرئيسية).
+4.  سيعمل الموقع كتطبيق كامل بدون شريط المتصفح.
+
+## 🛠 التقنيات المستخدمة
+- Angular 18+ (Zoneless)
+- Tailwind CSS
+- Google Gemini API
